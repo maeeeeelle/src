@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+}
+
+@import "bootstrap/scss/bootstrap-grid";
+.row + .row {
+  margin-top: 16px;
+}
+
+.row > .col,
+.row > [class^="col-"] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
+}
+.header {
+  background-color: #3a1215;
+  color: white;
+}
+.ideologie {
+}
+
+.footer {
+  background-color: #3a1215;
+  color: white;
+}
+
+.ideologie {
+  color: white;
+  background-color: black;
+}
+.domaine{
+  color: white;
+  background-color: black;
+}
+.bouton{
+  display: flex;
+padding: 0px 10px;
+justify-content: center;
+align-items: center;
+gap: 24px;border-radius: 3px;
+border: 0.5px solid var(--white, #FFF);
+}
+// .{
+//   gap: 24px;
+// }
