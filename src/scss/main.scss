@@ -14,21 +14,113 @@ video {
 }
 
 @import "bootstrap/scss/bootstrap-grid";
-.row + .row {
-  margin-top: 16px;
+// .row + .row {
+//   margin-top: 16px;
+// }
+
+// .row > .col,
+// .row > [class^="col-"] {
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   background-color: rgba(86, 61, 124, 0.15);
+//   border: 1px solid rgba(86, 61, 124, 0.2);
+// }
+
+h1 {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Cochin;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 106.9%; /* 48.105px */
 }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
+h2 {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: "Maven Pro";
+  font-size: 20px;
+  font-weight: 400;
+}
+.awesome {
+  font-family: "Font Awesome 6 Free";
+}
+
+.tout {
+  margin-top: 22px;
+  display: flex;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(37.5px);
 }
 .header {
   background-color: #3a1215;
   color: white;
+  height: 140px;
 }
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 23px;
+}
+.top {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  justify-content: end;
+}
+
+.verticaltrait {
+  width: 22px;
+  height: 1px;
+  transform: rotate(90deg);
+  border-radius: 1.1px;
+  opacity: 0.4;
+  background: var(--white, #fff);
+}
+
+.horizontaltrait {
+  width: 1171px;
+  height: 1px;
+  opacity: 0.2;
+  background: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+
+.gras {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  color: var(--white, #fff);
+  font-family: "Lucida Grande";
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.fin {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  color: var(--white, #fff);
+  font-family: "Lucida Grande";
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .ideologie {
 }
 
@@ -38,20 +130,38 @@ video {
 }
 
 .ideologie {
-  color: white;
-  background-color: black;
-}
-.domaine{
-  color: white;
-  background-color: black;
-}
-.bouton{
   display: flex;
-padding: 0px 10px;
-justify-content: center;
+  background-color: black;
+  color: white;
+  margin: 50px;
+}
+.domaine {
+  color: white;
+  background-color: black;
+}
+.ideo{
+  display: flex;
+width: 641px;
+padding-bottom: 30px;
+flex-direction: column;
 align-items: center;
-gap: 24px;border-radius: 3px;
-border: 0.5px solid var(--white, #FFF);
+gap: 30px;
+flex-shrink: 0;
+}
+
+.ideo h2{
+opacity: 0.77;
+}
+
+.bouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 3px;
+  border: 0.5px solid var(--white, #fff);
+  padding: 12px;
+  gap: 10px;
 }
 // .{
 //   gap: 24px;
