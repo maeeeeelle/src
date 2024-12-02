@@ -46,6 +46,10 @@ h2 {
   font-family: "Font Awesome 6 Free";
 }
 
+.fa-solid {
+  color: white;
+}
+
 .tout {
   margin-top: 22px;
   display: flex;
@@ -121,36 +125,37 @@ h2 {
   font-weight: 500;
 }
 
-.ideologie {
-}
-
-.footer {
-  background-color: #3a1215;
-  color: white;
+.ideologie img {
+  height: 507px;
+  flex-shrink: 0;
+  align-self: stretch;
 }
 
 .ideologie {
   display: flex;
   background-color: black;
   color: white;
-  margin: 50px;
+  max-width: 1920px;
+  height: 766px;
+  padding: 129px 50px;
 }
 .domaine {
   color: white;
   background-color: black;
 }
-.ideo{
+.ideo {
+  margin-top: -429px;
   display: flex;
-width: 641px;
-padding-bottom: 30px;
-flex-direction: column;
-align-items: center;
-gap: 30px;
-flex-shrink: 0;
+  width: 641px;
+  // padding-bottom: 265px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
 }
 
-.ideo h2{
-opacity: 0.77;
+.ideo h2 {
+  opacity: 0.77;
 }
 
 .bouton {
@@ -166,3 +171,7 @@ opacity: 0.77;
 // .{
 //   gap: 24px;
 // }
+.footer {
+  background-color: #3a1215;
+  color: white;
+}
