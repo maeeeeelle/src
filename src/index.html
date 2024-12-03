@@ -1,60 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="scss/main.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Maven+Pro:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://use.typekit.net/axh0nob.css" />
-    <script
-      src="https://kit.fontawesome.com/b0754b42ca.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="tout">
-              <img src="image/LOGO.png" alt="chiroptera" />
-              <div class="end">
-                <div class="top">
-                  <img src="image/insta.png" alt="insta" />
-                  <img src="image/facebook.png" alt="facebook" />
-                  <div class="verticaltrait"></div>
-                  <h2>FR <i class="fa-solid fa-caret-down"></i></h2>
-                  <img src="image/panier.png" alt="panier" />
-                  <img src="image/profil.png" alt="profil" />
-                </div>
-                <div class="horizontaltrait"></div>
-                <div class="bottom">
-                  <div class="gras">
-                    <p>Idéologie</p>
-                    <p>Artisans</p>
-                    <p>Domaine</p>
-                    <p>Actualités</p>
-                    <p>Vins</p>
-                  </div>
-                  <div class="fin">
-                    <p>Boutique</p>
-                    <p>Visites / événements</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+<extends src="base-layout.html">
+  <block name="content">
     <div class="ideologie">
       <div class="container">
         <div class="row">
@@ -63,7 +8,10 @@
             <div class="row">
               <div class="col-7 offset-5">
                 <div class="ideo">
-                  <h1>Le vin nature<br> un retour à l'essentiel</h1>
+                  <h1>
+                    Le vin nature<br />
+                    un retour à l'essentiel
+                  </h1>
                   <h2>
                     Le vin nature est un vin authentique, produit sans intrants
                     chimiques ni levures industrielles, pour refléter la pureté
@@ -85,8 +33,31 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-5">artisan 1</div>
-        <div class="col-7">artisan 2</div>
+        <div class="artisans">
+          <div class="col-5">
+            <div class="gauche">
+              <img src="image/1/verre artisans.png" alt="verres" />
+              <div class="blok">
+                <div class="blok-text">
+                  <h1>Nos artisans</h1>
+                  <h2>Artisanat et passion au service du vin vivant.</h2>
+                </div>
+                <div class="bouton">
+                  <p>VOIR PLUS</p>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-7">
+              <div class="droite">
+                <img src="image/1/artisan.png" alt="artisans" />
+                <img src="image/1/bouteille.png" alt="bouteilles" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="domaine">
@@ -111,20 +82,5 @@
         <div class="col">photo actualités</div>
       </div>
     </div>
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-4">adresse</div>
-          <div class="col-2">suivre</div>
-          <div class="col-5 offset-1">newsletter</div>
-          <div class="col-4">contact</div>
-          <div class="col-2">langue</div>
-          <div class="col-5 offset-1">logos</div>
-          <div class="col">photo actualités</div>
-        </div>
-      </div>
-    </div>
-
-    <script src="js/main.js" type="module"></script>
-  </body>
-</html>
+  </block>
+</extends>
