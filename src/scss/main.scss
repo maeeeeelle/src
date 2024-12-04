@@ -11,6 +11,7 @@ a {
 img,
 video {
   display: block;
+  max-width: 100%;
 }
 
 @import "bootstrap/scss/bootstrap-grid";
@@ -26,25 +27,12 @@ video {
 //   border: 1px solid rgba(86, 61, 124, 0.2);
 // }
 body {
-  max-width: 1920px;
-  min-height: 1200px;
 }
 
-h1 {
-  color: var(--white, #fff);
-  text-align: center;
-  font-family: Cochin;
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 106.9%; /* 48.105px */
-}
-
-h2 {
-  color: var(--white, #fff);
-  text-align: center;
-  font-family: "Maven Pro";
-  font-size: 20px;
-  font-weight: 400;
+.header {
+  background-color: #3a1215;
+  color: white;
+  // position: fixed;
 }
 
 .fa-solid {
@@ -59,11 +47,6 @@ h2 {
   padding: 22px 51px 18px 51px;
 }
 
-.header {
-  background-color: #3a1215;
-  color: white;
-  // position: fixed;
-}
 .end {
   display: flex;
   flex-direction: column;
@@ -87,12 +70,11 @@ h2 {
 }
 
 .horizontaltrait {
-  width: 1171px;
   height: 1px;
   opacity: 0.2;
   background: #fff;
   display: flex;
-  justify-content: flex-end;
+  max-width: 1171px;
 }
 
 .bottom {
@@ -115,6 +97,14 @@ h2 {
   font-weight: 600;
 }
 
+@media (min-width: 0px) and (max-width: 1400px) {
+  .fin {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
 .fin {
   display: flex;
   flex-direction: row;
@@ -128,36 +118,71 @@ h2 {
   font-weight: 500;
 }
 
+h1 {
+  color: var(--white, #fff);
+  font-family: Cochin;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 106.9%; /* 48.105px */
+}
+
+h2 {
+  color: var(--white, #fff);
+  font-family: "Maven Pro";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.ideologie img {
+}
+
 .ideo {
-  margin-top: -429px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.ideo h2 {
+  color: #d2d2d2;
+}
+
+.ideologie {
+  background-color: black;
+  color: white;
+}
+
+.domaine img {
+  flex-shrink: 0;
+}
+
+.dom {
   display: flex;
   width: 641px;
+  text-align: center;
+  padding-bottom: 30px;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.ideo h2 {
-  opacity: 0.77;
-}
-.ideologie img {
-  height: 507px;
-  flex-shrink: 0;
-  align-self: stretch;
+.dom h2 {
+  color: #d2d2d2;
 }
 
-.ideologie {
-  display: flex;
-  background-color: black;
-  color: white;
-  max-width: 1920px;
-  height: 766px;
-  padding: 129px 50px;
-}
 .domaine {
-  color: white;
   background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.elements {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
 }
 
 .blok-text {
@@ -243,3 +268,247 @@ h2 {
   background-color: #3a1215;
   color: white;
 }
+
+// * {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// a {
+//   color: inherit;
+// }
+
+// img,
+// video {
+//   display: block;
+// }
+
+// @import "bootstrap/scss/bootstrap-grid";
+// // .row + .row {
+// //   margin-top: 16px;
+// // }
+
+// // .row > .col,
+// // .row > [class^="col-"] {
+// //   padding-top: 12px;
+// //   padding-bottom: 12px;
+// //   background-color: rgba(86, 61, 124, 0.15);
+// //   border: 1px solid rgba(86, 61, 124, 0.2);
+// // }
+// body {
+//   max-width: 1920px;
+//   min-height: 1200px;
+// }
+
+// h1 {
+//   color: var(--white, #fff);
+//   text-align: center;
+//   font-family: Cochin;
+//   font-size: 45px;
+//   font-weight: 500;
+//   line-height: 106.9%; /* 48.105px */
+// }
+
+// h2 {
+//   color: var(--white, #fff);
+//   text-align: center;
+//   font-family: "Maven Pro";
+//   font-size: 20px;
+//   font-weight: 400;
+// }
+
+// .fa-solid {
+//   color: white;
+// }
+
+// .tout {
+//   justify-content: space-around;
+//   display: flex;
+//   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+//   backdrop-filter: blur(37.5px);
+//   padding: 22px 51px 18px 51px;
+// }
+
+// .header {
+//   background-color: #3a1215;
+//   color: white;
+//   // position: fixed;
+// }
+// .end {
+//   display: flex;
+//   flex-direction: column;
+//   align-self: flex-end;
+//   gap: 23px;
+// }
+// .top {
+//   display: flex;
+//   align-items: center;
+//   gap: 21px;
+//   justify-content: end;
+// }
+
+// .verticaltrait {
+//   width: 22px;
+//   height: 1px;
+//   transform: rotate(90deg);
+//   border-radius: 1.1px;
+//   opacity: 0.4;
+//   background: var(--white, #fff);
+// }
+
+// .horizontaltrait {
+//   width: 1171px;
+//   height: 1px;
+//   opacity: 0.2;
+//   background: #fff;
+//   display: flex;
+//   justify-content: flex-end;
+// }
+
+// .bottom {
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   gap: 30px;
+// }
+
+// .gras {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-end;
+//   align-items: center;
+//   gap: 30px;
+//   color: var(--white, #fff);
+//   font-family: "Lucida Grande";
+//   text-transform: capitalize;
+//   font-size: 20px;
+//   font-weight: 600;
+// }
+
+// .fin {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-end;
+//   align-items: center;
+//   gap: 30px;
+//   color: var(--white, #fff);
+//   font-family: "Lucida Grande";
+//   text-transform: capitalize;
+//   font-size: 16px;
+//   font-weight: 500;
+// }
+
+.ideo {
+  margin-top: -429px;
+  text-align: center;
+  display: flex;
+  width: 641px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+}
+
+.ideo h2 {
+  opacity: 0.77;
+}
+.ideologie img {
+}
+
+.ideologie {
+  display: flex;
+  background-color: black;
+  color: white;
+  max-width: 1920px;
+  height: 766px;
+  padding: 129px 50px;
+}
+// .domaine {
+//   color: white;
+//   background-color: black;
+// }
+
+// .blok-text {
+//   h2,
+//   h1 {
+//     color: black;
+//     text-align: start;
+//   }
+// }
+// .gauche {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 37.5px;
+// }
+
+// .gauche img {
+//   height: 506px;
+//   flex-shrink: 0;
+//   align-self: stretch;
+// }
+
+// .artisans {
+//   display: flex;
+//   margin-top: 149px;
+//   margin-bottom: 149px;
+//   justify-content: center;
+//   align-content: center;
+//   gap: 24px;
+// }
+// .artisans .bouton {
+//   background: var(--darkred, #400e14);
+//   display: flex;
+//   padding: 12px 34px;
+//   justify-content: center;
+// }
+
+// .bouton p {
+//   color: var(--white, #fff);
+//   font-family: "Maven Pro";
+//   font-size: 20px;
+//   font-weight: 400;
+// }
+
+// .blok-text {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 7px;
+//   align-self: stretch;
+// }
+
+// .blok {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-end;
+//   gap: 49px;
+//   flex-shrink: 0;
+//   align-self: stretch;
+// }
+
+// .droite {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 30px;
+// }
+
+// .droite img {
+//   width: 641px;
+// }
+
+// .bouton {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 10px;
+//   border-radius: 3px;
+//   border: 0.5px solid var(--white, #fff);
+//   padding: 12px;
+// }
+// // .{
+// //   gap: 24px;
+// // }
+// .footer {
+//   background-color: #3a1215;
+//   color: white;
+// }
