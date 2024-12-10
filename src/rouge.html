@@ -1,66 +1,126 @@
 <extends src="base-layout.html">
   <block name="content">
-    <div class="container">
+    <div class="container mockupall">
       <div class="row">
         <div class="col-5">
-          image
-          <!-- <img src="image/2/mockupr.png" alt="" /> -->
+          <img src="image/2/mockupr.png" alt="" />
         </div>
-
-        <div class="col-7"></div>
+        <div class="col-7">
+          <div class="mockup-tout">
+            <div class="mockup-texte">
+              <h1>Pinot Noir, Gamay</h1>
+              <h2>
+                Un vin aromatique et élégant, aux notes de litchi, rose et
+                épices. Fraîcheur et authenticité pour une expérience unique du
+                terroir.
+              </h2>
+              <h3>73.00 CHF</h3>
+              <div class="couleur">
+                <img src="image/2/rouge.png" alt="ROUGE" />
+                <img src="image/2/rond-jaune.png" alt="jaune" />
+              </div>
+            </div>
+            <div class="quantite">
+              <p class="quantite-titre">Quantité</p>
+              <div class="plusmoins">
+                <i class="fa-solid fa-minus"></i>
+                <div class="separations"></div>
+                01
+                <div class="separations"></div>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="bas">
+                <div class="like">
+                  <div class="bouton-panier">Ajouter au panier</div>
+                  <i class="fa-regular fa-heart coeur"></i>
+                </div>
+                <img src="image/2/biocolor.png" alt="bio" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="barre"></div>
+    <div class="container infos">
+      <div class="row">
+        <div class="col-5">
+          <div class="row gap-infos">
+            <div class="col-5 légé">Année</div>
+            <div class="col-6 épais">2024</div>
+            <div class="col-5 légé">Pays</div>
+            <div class="col-6 épais">Suisse</div>
+            <div class="col-5 légé">Région</div>
+            <div class="col-6 épais">Valais</div>
+            <div class="col-5 légé">Type</div>
+            <div class="col-6 épais">Vin</div>
+            <div class="col-5 légé">Couleur</div>
+            <div class="col-6 épais">Rouge</div>
+            <div class="col-5 légé">Appélation</div>
+            <div class="col-6 épais">Origine controlée</div>
+          </div>
+        </div>
+        <div class="col-6 offset-1">
+          <div class="row gap-infos">
+            <div class="col-5 légé">Degrès d'alcool</div>
+            <div class="col-6 épais">13.7%</div>
+            <div class="col-5 légé">Domaine</div>
+            <div class="col-6 épais">Chiroptera</div>
+            <div class="col-5 légé">Contenance</div>
+            <div class="col-6 épais">75cl</div>
+            <div class="col-5 légé">Type</div>
+            <div class="col-6 épais">Nature en biodynamie</div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="container">
-          <div class="row">
-            <div class="col-5"></div>
-            <div class="col-7"></div>
+        <div class="col-12 text-center">
+          <div class="texte-bouton">
+            <div class="bouton-similaires">
+              <div class="bouton-infos-blanc">Tout nos vins</div>
+              <div class="bouton-infos">Actualité</div>
+              <div class="bouton-infos">domaine</div>
+            </div>
+            <h2>
+              Découvrez une sélection de vins authentiques et naturels, issus
+              d'artisans passionnés qui respectent la terre et la tradition.
+              Chaque bouteille raconte une histoire unique, de terroirs
+              préservés et d'un savoir-faire qui sublime le vin vivant. Explorez
+              nos cuvées et laissez-vous surprendre par des saveurs originales
+              et engagées.
+            </h2>
           </div>
+          <h1 class="mb-4">Nos vins similaires</h1>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-2">Année</div>
-            <div class="col-3">2024</div>
-          </div>
-          <div class="row">
-            <div class="col-2"></div>
-            <div class="col-3"></div>
-          </div>
-          <div class="row">
-            <div class="col-2"></div>
-            <div class="col-3"></div>
-          </div>
-          <div class="row">
-            <div class="col-2"></div>
-            <div class="col-3"></div>
-          </div>
-          <div class="row">
-            <div class="col-2"></div>
-            <div class="col-3"></div>
-          </div>
-          <div class="row">
-            <div class="col-2"></div>
-            <div class="col-3"></div>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img
+            src="image/2/bouteille1.png"
+            class="img-fluid"
+            alt="Bouteilles de vin 1"
+          />
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-2 offset-1"></div>
-            <div class="col-3"></div>
-          </div>
-          <div class="row">
-            <div class="col-2 offset-1"></div>
-            <div class="col-3"></div>
-          </div>
-          <div class="row">
-            <div class="col-2 offset-1"></div>
-            <div class="col-3"></div>
-          </div>
-          <div class="row">
-            <div class="col-2 offset-1"></div>
-            <div class="col-3"></div>
-          </div>
+        <div class="col-4">
+          <img
+            src="image/2/bouteille2.png"
+            class="img-fluid"
+            alt="Bouteilles de vin 2"
+          />
+        </div>
+        <div class="col-4">
+          <img
+            src="image/2/bouteille3.png"
+            class="img-fluid"
+            alt="Bouteilles de vin 3"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="#" class="btn btn-primary">Voir plus →</a>
         </div>
       </div>
     </div>

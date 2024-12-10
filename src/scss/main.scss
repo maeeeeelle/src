@@ -19,15 +19,13 @@ video {
   margin-top: 16px;
 }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
-body {
-}
+// .row > .col,
+// .row > [class^="col-"] {
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   background-color: rgba(86, 61, 124, 0.15);
+//   border: 1px solid rgba(86, 61, 124, 0.2);
+// }
 
 .header {
   background-color: #3a1215;
@@ -127,9 +125,6 @@ h2 {
   font-weight: 400;
 }
 
-.ideologie img {
-}
-
 .ideo {
   display: flex;
   align-items: center;
@@ -146,7 +141,8 @@ h2 {
 }
 
 .domaine img {
-  flex-shrink: 0;
+  position: relative;
+  display: inline-block;
 }
 
 .dom {
@@ -162,10 +158,6 @@ h2 {
   align-items: center;
 }
 
-.dom h2 {
-  color: #d2d2d2;
-}
-
 .domaine {
   background-color: black;
   color: white;
@@ -176,7 +168,9 @@ h2 {
 .elements {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  position: absolute;
+  transform: translate(0%, -133%);
+  text-align: center;
 }
 
 .blok-text {
@@ -486,9 +480,6 @@ h2 {
 .ideo h2 {
   opacity: 0.77;
 }
-.ideologie img {
-}
-
 .ideologie {
   display: flex;
   background-color: black;
@@ -716,3 +707,171 @@ h2 {
 //   background-color: #3a1215;
 //   color: white;
 // }
+.mockup-texte {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  align-self: stretch;
+}
+.couleur {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+h3 {
+  font-family: Cochin;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.bouton-vin {
+  border-radius: 3px;
+  background: var(--darkred, #400e14);
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: "Maven Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  padding: 12px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--darkred, #400e14);
+}
+
+.bas {
+  display: flex;
+  justify-content: space-between;
+}
+.bas img {
+  display: flex;
+  justify-items: flex-end;
+  align-content: flex-end;
+}
+.like {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 23px;
+}
+
+.mockup-tout {
+  gap: auto;
+  display: flex;
+  height: 515px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.quantite-titre {
+  font-family: Cochin;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 106.9%; /* 48.105px */
+}
+
+.quantite {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+  align-self: stretch;
+}
+.plusmoins {
+  display: flex;
+  padding: 8px 28px;
+  align-items: center;
+  gap: 33px;
+  width: 262px;
+  border: 1px solid var(--darkred, #400e14);
+}
+.separations {
+  width: 22px;
+  height: 2px;
+  transform: rotate(90deg);
+  border-radius: 1.1px;
+  opacity: 0.4;
+  background: var(--black, #000);
+}
+
+.mockup-tout .bouton {
+  background: var(--darkred, #400e14);
+  display: flex;
+  padding: 12px 34px;
+  justify-content: center;
+}
+.coeur {
+  font-size: 30px;
+}
+
+.mockupall {
+  display: flex;
+  width: 1116px;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 112px;
+  margin-bottom: 122px;
+}
+.barre {
+  height: 1px;
+  opacity: 0.3;
+  background: #3a3a3a;
+  margin-bottom: 74px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.épais {
+  color: var(--black, #000);
+  font-family: Cochin;
+  font-size: 24px;
+  font-weight: 700;
+}
+.légé {
+  color: var(--black, #000);
+  font-family: Cochin;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.gap-infos {
+  display: flex;
+  gap: 27px;
+}
+.infos {
+  margin-bottom: 74px;
+}
+
+.text-center .bouton {
+  text-transform: uppercase;
+  color: black;
+}
+.bouton-similaires {
+  display: flex;
+  width: 926px;
+  padding: 0px 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.texte-bouton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 41px;
+  align-self: stretch;
+  align-items: center;
+}
+
+.text-center {
+  display: flex;
+  width: 926px;
+  flex-direction: column;
+  align-items: center;
+  gap: 92px;
+}
