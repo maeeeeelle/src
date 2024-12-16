@@ -36,7 +36,6 @@ video {
 }
 
 .tout {
-  justify-content: space-between;
   display: flex;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(37.5px);
@@ -45,6 +44,7 @@ video {
 
 .end {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   align-self: flex-end;
   gap: 23px;
@@ -70,7 +70,6 @@ video {
   opacity: 0.2;
   background: #fff;
   display: flex;
-  max-width: 1171px;
 }
 
 .bottom {
@@ -128,15 +127,33 @@ h2 {
 }
 
 // ideologie--->
+.ideologiebackground {
+  background-image: url(./../image/1/photo\ ideologie.png);
+  background-size: cover;
+}
 
 .ideo {
+  padding: 71px 0px 106px 0px;
+  text-align: center;
   display: flex;
+  width: 641px;
+  flex-direction: column;
   align-items: center;
   gap: 30px;
+  flex-shrink: 0;
 }
 
 .ideo h2 {
+  opacity: 0.77;
   color: #d2d2d2;
+}
+.ideologie {
+  display: flex;
+  background-color: black;
+  color: white;
+  max-width: 1920px;
+  max-height: 766px;
+  padding: 129px 50px;
 }
 
 .ideologie {
@@ -147,17 +164,12 @@ h2 {
 //domaine--->
 
 .domaine img {
-  position: relative;
-  display: inline-block;
 }
 
 .dom {
   display: flex;
-  width: 641px;
   text-align: center;
-  padding-bottom: 30px;
   flex-direction: column;
-  align-items: center;
   gap: 30px;
   flex-shrink: 0;
   justify-content: center;
@@ -172,9 +184,9 @@ h2 {
 }
 
 .elements {
+  background-image: url(./../image/1/photo\ domaine.png);
+  background-size: cover;
   display: flex;
-  justify-content: space-between;
-  position: absolute;
   transform: translate(0%, -133%);
   text-align: center;
 }
@@ -195,11 +207,13 @@ h2 {
 }
 
 .gauche img {
+  width: 100%;
   height: 506px;
-  flex-shrink: 0;
   align-self: stretch;
 }
-
+.droite img {
+  width: 100%;
+}
 .artisans {
   display: flex;
   margin-top: 149px;
@@ -209,10 +223,23 @@ h2 {
   gap: 24px;
 }
 .artisans .bouton {
-  background: var(--darkred, #400e14);
-  display: flex;
   padding: 12px 34px;
-  justify-content: center;
+}
+.bartisant {
+  background-color: #400e14;
+  font-family: "Maven Pro";
+  font-size: 20px;
+  font-weight: 400;
+}
+.bartisant:hover p {
+  color: #400e14;
+}
+
+.bartisant:hover {
+  color: #400e14;
+  border-radius: 3px;
+  background-color: white;
+  border: 0.5px solid var(--darkred, #400e14);
 }
 
 .bouton p {
@@ -220,6 +247,11 @@ h2 {
   font-family: "Maven Pro";
   font-size: 20px;
   font-weight: 400;
+}
+
+.bouton:hover {
+  background-color: white;
+  color: #400e14;
 }
 
 .blok-text {
@@ -475,28 +507,6 @@ h2 {
   text-decoration-line: underline;
 }
 
-.ideo {
-  margin-top: -429px;
-  text-align: center;
-  display: flex;
-  width: 641px;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  flex-shrink: 0;
-}
-
-.ideo h2 {
-  opacity: 0.77;
-}
-.ideologie {
-  display: flex;
-  background-color: black;
-  color: white;
-  max-width: 1920px;
-  height: 766px;
-  padding: 129px 50px;
-}
 // DEUXIEME PAGE--->
 
 //mockup--->
@@ -605,6 +615,10 @@ h3 {
   display: flex;
   align-content: center;
 }
+
+.coeur:click {
+  font-weight: 900;
+}
 .mockupall {
   display: flex;
   width: 1116px;
@@ -648,6 +662,10 @@ h3 {
 
 //similaires--->
 
+.container-complet {
+  align-content: center;
+}
+
 .container-similaires {
   display: flex;
   flex-direction: column;
@@ -658,6 +676,9 @@ h3 {
 .texte-bouton {
   text-align: center;
   color: white;
+}
+.h2infos {
+  max-width: 1000px;
 }
 
 .text-center .bouton-infos {
@@ -691,8 +712,11 @@ h3 {
 }
 .bouton-similaires {
   display: flex;
-  justify-content: space-between;
+  gap: 160;
   align-items: center;
+  padding: 0px 40px;
+  justify-content: space-between;
+  display: flex;
 }
 .texte-bouton {
   display: flex;
@@ -705,7 +729,7 @@ h3 {
 .text-center {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-self: center;
   background-color: #400e14;
   min-height: 720px;
   padding-top: 89px;
@@ -735,9 +759,7 @@ h3 {
 }
 
 .rassemblement {
-  top: 1810px;
-  left: 42px;
-  position: absolute;
+  margin-bottom: -250px;
   display: flex;
   flex-direction: column;
   gap: 50px;
