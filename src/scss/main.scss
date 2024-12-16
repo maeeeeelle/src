@@ -549,7 +549,7 @@ h3 {
 .like {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-self: end;
   gap: 23px;
 }
 
@@ -602,8 +602,9 @@ h3 {
 }
 .coeur {
   font-size: 30px;
+  display: flex;
+  align-content: center;
 }
-
 .mockupall {
   display: flex;
   width: 1116px;
@@ -647,15 +648,21 @@ h3 {
 
 //similaires--->
 
+.container-similaires {
+  display: flex;
+  flex-direction: column;
+  gap: 92px;
+  position: relative;
+}
+
 .texte-bouton {
   text-align: center;
+  color: white;
 }
 
 .text-center .bouton-infos {
   border-radius: 3px;
   text-transform: uppercase;
-  color: black;
-  //color:white;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -667,22 +674,29 @@ h3 {
   font-size: 22px;
 }
 .bwhite {
-  background: var(--white, #ff5050);
+  background: white;
+  color: #400e14;
 }
 .bred {
   border: 0.5px solid var(--white, #fff);
+  color: white;
 }
 
+.justetexte {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 92px;
+}
 .bouton-similaires {
   display: flex;
-  width: 926px;
-  padding: 0px 40px;
   justify-content: space-between;
+  align-items: center;
 }
 .texte-bouton {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 41px;
   align-self: stretch;
   align-items: center;
@@ -690,11 +704,12 @@ h3 {
 
 .text-center {
   display: flex;
-  width: 926px;
   flex-direction: column;
-  align-items: center;
-  gap: 92px;
-  margin: auto;
+  align-content: center;
+  background-color: #400e14;
+  min-height: 720px;
+  padding-top: 89px;
+  margin-bottom: 450px;
 }
 
 .plus {
@@ -706,13 +721,9 @@ h3 {
   gap: 24px;
   align-items: center;
   justify-content: end;
-  margin-top: 50px;
-  margin-bottom: 80px;
 }
 
-.photo-bouteille img {
-}
-.photo-bouteille  {
+.photo-bouteille {
   display: flex;
   gap: 24px;
   justify-content: center;
@@ -722,12 +733,21 @@ h3 {
   color: #400e14;
   background-color: white;
 }
-.fond-rouge {
-  height: 699px;
-  flex-shrink: 0;
-  background: #400e14;
+
+.rassemblement {
+  top: 1810px;
+  left: 42px;
+  position: absolute;
   display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
+// .fond-rouge {
+//   height: 699px;
+//   flex-shrink: 0;
+//   background: #400e14;
+//   display: flex;
+// }
 
 // .fond-rouge{
 //   margin-top: -1117px;
