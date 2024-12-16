@@ -134,8 +134,6 @@ h2 {
   display: flex;
   background-color: black;
   color: white;
-  max-width: 1920px;
-  max-height: 766px;
   padding: 129px 50px;
 }
 .ideologiebackground {
@@ -144,14 +142,12 @@ h2 {
 }
 
 .ideo {
-  padding: 71px 0px 106px 0px;
+  padding: 71px 112px 106px 0px;
   text-align: center;
   display: flex;
-  width: 641px;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  flex-shrink: 0;
 }
 
 .ideo h2 {
@@ -166,7 +162,6 @@ h2 {
   margin-top: 149px;
   margin-bottom: 149px;
   justify-content: center;
-  align-content: center;
   gap: 24px;
 }
 
@@ -177,8 +172,6 @@ h2 {
 }
 
 .gauche img {
-  width: 100%;
-  align-self: stretch;
 }
 
 .blok {
@@ -256,16 +249,33 @@ h2 {
 }
 
 .droite img {
-  width: 100%;
 }
 
 //domaine--->
+
+.domainebackground {
+  background-image: url(./../image/1/photo\ domaine.png);
+  background-size: cover;
+}
+
+.décalage {
+  margin-left: 42px;
+}
+
+.image-texte-domaine {
+  display: inline-flex;
+  align-items: center;
+  gap: 57px;
+  padding: 89px 57px 89px 0px;
+}
+
 .domaine {
   background-color: black;
-  color: white;padding: 139px 97px;
+  color: white;
+  padding: 139px 0px;
 }
 .domaine img {
-  width: 100%;
+  height: auto;
 }
 
 .elements {
@@ -279,14 +289,13 @@ h2 {
 }
 
 .dom {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  justify-content: center;
   align-items: center;
-  
+  gap: 30px;
+  padding: 89px 57px;
 }
-
 //actualité--->
 
 .actualitées {
@@ -437,10 +446,7 @@ h2 {
 .newsletter {
   display: inline-flex;
   height: 40px;
-  align-items: center;
-  gap: 23px;
   flex-shrink: 0;
-  text-align: center;
   font-family: Cochin;
   font-size: 19px;
   font-weight: 500;
@@ -676,7 +682,7 @@ h3 {
   background-color: #400e14;
   min-height: 720px;
   padding-top: 89px;
-  margin-bottom: 450px;
+  margin-bottom: 350px;
 }
 
 .text-center .bouton-infos {
@@ -757,6 +763,14 @@ h3 {
   display: flex;
   gap: 24px;
   justify-content: center;
+}
+
+.img-fluid {
+  transition: transform 0.5s;
+}
+
+.img-fluid:hover {
+  transform: scale(1.1);
 }
 
 .plus {
