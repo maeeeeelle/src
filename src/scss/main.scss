@@ -29,6 +29,10 @@ video {
 
 //h1,h2--->
 
+body {
+  padding-top: 140px;
+}
+
 h1 {
   font-family: Cochin;
   font-size: 45px;
@@ -47,13 +51,16 @@ h2 {
 .header {
   background-color: #3a1215;
   color: white;
-  // position: fixed;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 .tout {
   display: flex;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(37.5px);
+  backdrop-filter: blur(50px);
   padding: 22px 51px 18px 51px;
 }
 
@@ -61,14 +68,14 @@ h2 {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  align-self: flex-end; //?
   gap: 23px;
 }
+
 .top {
   display: flex;
   align-items: center;
   gap: 21px;
-  justify-content: end; //?
+  justify-content: end;
 }
 
 .verticaltrait {
@@ -84,23 +91,17 @@ h2 {
   height: 1px;
   opacity: 0.2;
   background: #fff;
-  display: flex;
 }
 
 .bottom {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   gap: 30px;
 }
 
 .gras {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
   gap: 30px;
-  color: var(--white, #fff);
   font-family: "Lucida Grande";
   text-transform: capitalize;
   font-size: 20px;
@@ -117,11 +118,8 @@ h2 {
 
 .fin {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
   gap: 30px;
-  color: var(--white, #fff);
   font-family: "Lucida Grande";
   text-transform: capitalize;
   font-size: 16px;
@@ -139,6 +137,7 @@ h2 {
 .ideologiebackground {
   background-image: url(./../image/1/photo\ ideologie.png);
   background-size: cover;
+  width: 100%;
 }
 
 .ideo {
@@ -168,19 +167,19 @@ h2 {
 .gauche {
   display: flex;
   flex-direction: column;
-  gap: 37.5px;
-}
-
-.gauche img {
+  justify-content: space-between;
+  height: 100%;
 }
 
 .blok {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 49px;
-  flex-shrink: 0;
-  align-self: stretch;
+  gap: 53px;
+}
+
+.blok h1 {
+  font-weight: 700;
 }
 
 .blok-text {
@@ -190,34 +189,22 @@ h2 {
   align-self: stretch;
 }
 
-.blok-text {
-  h2,
-  h1 {
-    color: black;
-    text-align: start;
-  }
-}
-
 .bouton {
   color: white;
-  font-family: "Maven Pro";
   display: flex;
   justify-content: center;
+  font-family: "Maven Pro";
   align-items: center;
   gap: 10px;
   border-radius: 3px;
   border: 0.5px solid var(--white, #fff);
-  padding: 12px;
+  padding: 10px 24px;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
 }
 
 .artisans .bouton {
   padding: 12px 34px;
-}
-.bouton p {
-  color: var(--white, #fff);
-  font-family: "Maven Pro";
-  font-size: 20px;
-  font-weight: 400;
 }
 
 .bouton:hover {
@@ -229,10 +216,8 @@ h2 {
   background-color: #400e14;
   font-family: "Maven Pro";
   font-size: 20px;
-  font-weight: 400;
-}
-.bartisant:hover p {
-  color: #400e14;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
 }
 
 .bartisant:hover {
@@ -246,9 +231,6 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.droite img {
 }
 
 //domaine--->
@@ -274,27 +256,18 @@ h2 {
   color: white;
   padding: 139px 0px;
 }
-.domaine img {
-  height: auto;
-}
-
-.elements {
-  background-image: url(./../image/1/photo\ domaine.png);
-  display: flex;
-  text-align: center;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 57px;
-}
 
 .dom {
-  text-align: center;
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   padding: 89px 57px;
+}
+
+.dom h2 {
+  opacity: 0.77;
 }
 //actualité--->
 
@@ -305,22 +278,14 @@ h2 {
   margin-bottom: 94px;
 }
 .actu-text h1 {
-  color: black;
-  font-family: Cochin;
-  font-size: 45px;
-  font-style: normal;
   font-weight: 700;
   line-height: 106.9%; /* 48.105px */
 }
 
 .actu-text h2 {
-  color: var(--black, #000);
-  font-family: "Maven Pro";
   font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
+
 .text-fleche {
   display: flex;
   width: 1116px;
@@ -368,19 +333,13 @@ h2 {
   font-family: "Maven Pro";
   font-size: 18px;
 }
-// .photo-scroll {
-//   display: flex;
-//   align-items: center;
-//   gap: 89px;
-//   flex-shrink: 0;
-// }                       //?
 
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-1944px); // 324
   }
 }
 
@@ -406,9 +365,7 @@ h2 {
   opacity: 0.6;
   font-family: "Maven Pro";
   font-size: 15px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: 1.05px;
   text-transform: uppercase;
 }
@@ -417,9 +374,7 @@ h2 {
   color: var(--white, #fff);
   font-family: "Maven Pro";
   font-size: 22px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 .footer-icone {
@@ -429,14 +384,12 @@ h2 {
   height: 35.383px;
   align-items: center;
   gap: 20px;
-  flex-shrink: 0;
 }
 
 .ligne {
   width: 333px;
   height: 1px;
   transform: rotate(90deg);
-  flex-shrink: 0;
   border-radius: 2px;
   opacity: 0.2;
   background: var(--white, #fff);
@@ -446,7 +399,6 @@ h2 {
 .newsletter {
   display: inline-flex;
   height: 40px;
-  flex-shrink: 0;
   font-family: Cochin;
   font-size: 19px;
   font-weight: 500;
@@ -457,12 +409,12 @@ h2 {
   display: flex;
   width: 262px;
   height: 40px;
-  padding: 12px 46px 12px 14px;
+  padding: 12px 0px 12px 14px;
   align-items: center;
-  gap: 10px;
   border-radius: 3px;
   border: 1px solid var(--white, #fff);
 }
+
 .inscription {
   color: var(--black, #000);
   width: 166px;
@@ -470,7 +422,7 @@ h2 {
   display: flex;
   justify-content: flex-end;
   height: 40px;
-  padding: 12px 14px;
+  padding: 12px 0px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -482,6 +434,7 @@ h2 {
 .gris {
   color: #9d9d9d;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -500,12 +453,8 @@ h2 {
   font-size: 14px;
   gap: 169px;
   margin-top: 87px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.conditions {
   text-decoration-line: underline;
 }
 
@@ -521,7 +470,6 @@ h3 {
 
 .mockupall {
   display: flex;
-  width: 1116px;
   align-items: flex-start;
   gap: 24px;
   margin-top: 112px;
@@ -529,7 +477,6 @@ h3 {
 }
 
 .mockup-tout {
-  gap: auto;
   display: flex;
   height: 515px;
   flex-direction: column;
@@ -543,6 +490,7 @@ h3 {
   display: flex;
   padding: 12px 34px;
   justify-content: center;
+  transition: transform 0.5s;
 }
 
 .mockup-texte {
@@ -550,7 +498,6 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
   gap: 14px;
-  align-self: stretch;
 }
 
 .couleur {
@@ -599,27 +546,20 @@ h3 {
 
 .bas img {
   display: flex;
-  justify-items: flex-end;
-  align-content: flex-end;
 }
 
 .like {
   display: flex;
-  flex-direction: row;
   align-self: end;
   gap: 23px;
 }
 
 .bouton-panier {
   border-radius: 3px;
-  background: var(--darkred, #400e14);
   color: var(--white, #fff);
   text-align: center;
   font-family: "Maven Pro";
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   display: flex;
   padding: 12px 14px;
   justify-content: center;
@@ -628,15 +568,19 @@ h3 {
   background: var(--darkred, #400e14);
 }
 
-.coeur {
+label{
   font-size: 30px;
   display: flex;
-  align-content: center;
+  align-items: center;
 }
 
-// .coeur:click {
-//   font-weight: 900;
-// }
+input[type="checkbox"]:checked + label .coeur {
+  font-weight: 900;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
 
 .barre {
   height: 1px;
@@ -649,13 +593,11 @@ h3 {
 
 //infos--->
 .légé {
-  color: var(--black, #000);
   font-family: Cochin;
   font-size: 24px;
   font-weight: 500;
 }
 .épais {
-  color: var(--black, #000);
   font-family: Cochin;
   font-size: 24px;
   font-weight: 700;
@@ -671,16 +613,10 @@ h3 {
 }
 //similaires--->
 
-.container-complet {
-  align-content: center;
-}
-
 .text-center {
   display: flex;
   flex-direction: column;
-  align-self: center;
   background-color: #400e14;
-  min-height: 720px;
   padding-top: 89px;
   margin-bottom: 350px;
 }
@@ -690,10 +626,7 @@ h3 {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  gap: 24px;
-  display: flex;
   padding: 12px 24px;
-  align-items: center;
   gap: 24px;
   font-family: "Maven Pro";
   font-size: 22px;
@@ -703,7 +636,6 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 92px;
-  position: relative;
 }
 
 .texte-bouton {
@@ -712,22 +644,13 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 41px;
-  align-self: stretch;
   align-items: center;
 }
 
 .bouton-similaires {
   display: flex;
   gap: 160;
-  align-items: center;
-  padding: 0px 40px;
   justify-content: space-between;
-  display: flex;
-}
-
-.bouton-infos-blanc {
-  color: #400e14;
-  background-color: white;
 }
 
 .bwhite {
@@ -741,7 +664,7 @@ h3 {
 }
 
 .h2infos {
-  max-width: 1000px;
+  max-width: 926px;
 }
 
 .justetexte {
@@ -749,7 +672,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 92px;
 }
 
 .rassemblement {
@@ -759,14 +681,9 @@ h3 {
   gap: 50px;
 }
 
-.photo-bouteille {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-}
-
 .img-fluid {
   transition: transform 0.5s;
+  flex-grow: 1;
 }
 
 .img-fluid:hover {
@@ -774,23 +691,10 @@ h3 {
 }
 
 .plus {
-  color: var(--black, #000);
   font-family: Cochin;
   font-size: 32px;
-  font-weight: 500;
   display: flex;
   gap: 24px;
   align-items: center;
   justify-content: end;
 }
-
-// .fond-rouge {
-//   height: 699px;
-//   flex-shrink: 0;
-//   background: #400e14;
-//   display: flex;
-// }
-
-// .fond-rouge{
-//   margin-top: -1117px;
-// }
